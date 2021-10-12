@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://saumya010.github.io/pdfs/",
+  "homepage": "https://saumya010.github.io/pdf-client/",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000/",
