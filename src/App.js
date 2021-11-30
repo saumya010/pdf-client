@@ -25,14 +25,17 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className="App">
-				<input type="text" name="name" placeholder="Name" onChange={this.handleChange} />
-				<input type="number" name="receiptId" placeholder="Receipt ID" onChange={this.handleChange} />
-				<input type="number" name="price1" placeholder="Price 1" onChange={this.handleChange} />
-				<input type="number" name="price2" placeholder="Price 2" onChange={this.handleChange} />
-				<button onClick={this.createAndDownloadPdf}>
-					Download PDF
-				</button>
+			<div className="formContainer">
+				<div className="formInner">
+					<h1>Generate PDF</h1>
+					<input type="text" name="name" placeholder="Name" onChange={this.handleChange} />
+					<input type="number" name="receiptId" placeholder="Receipt ID" onChange={this.handleChange} />
+					<input type="number" name="price1" placeholder="Price 1" onChange={this.handleChange} />
+					<input type="number" name="price2" placeholder="Price 2" onChange={this.handleChange} />
+					<button onClick={this.createAndDownloadPdf}>
+						Download PDF
+					</button>
+				</div>
 			</div>
 		);
 	}
